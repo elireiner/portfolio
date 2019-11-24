@@ -22,9 +22,16 @@ nav {
     align-items: flex-end;
     align-self: center;
 }
-main{
+
+main {
     width: 100%;
+    height: 90vh;
 }
+
+#portfolio {
+    margin-top: 5vh;
+}
+
 .blue {
     color: #0000ff;
 }
@@ -37,27 +44,35 @@ p {
     margin: 0;
 }
 
-#about, #contact {
+#about {
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 80%;
+    align-items: center;
 }
 
-/*section {
-    height: 25vh;
+#contact {
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-}*/
-section.profile{
-    height: 15vh;
 }
-section.contact{
+
+h1,
+#about>p {
+    width: 100%;
+}
+
+section.profile {
+    height: 15vh;
+    text-align: center;
+}
+
+section.contact {
     height: 50%;
 }
-section.github-linkedin{
+
+section.github-linkedin {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -71,67 +86,111 @@ img.profile {
 }
 
 .small {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
 }
 
 .orange {
     color: #ad663d;
 }
-div.contact{
+
+div.contact {
     padding-top: 9vh;
     height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section.contact{
+
+section.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 85%;
 }
-a:visited {
-    color: #01213b;;
-  }
-  
-a:focus, a:hover{
+
+a:visited,
+a {
+    color: #01213b;
+    ;
+}
+
+a:focus,
+a:hover {
     color: #ad663d;
 }
-#quiz-app-header{
+
+div.contact {
+    width: 80%;
+    align-self: center;
+}
+
+hr {
+    width: 100%;
+    height: 1.5px;
+}
+
+#quiz-app-header {
     display: flex;
+    flex-direction: column;
     width: 50%;
     margin: auto;
 }
-#quiz-app-explanation{
-    width: 50%;
+
+#quiz-app-explanation {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
-#portfolio-links{
-    width: 50%;
+
+#portfolio-links {
+    width: 100%;
+    height: 5vh;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
-#quiz-app-img{
+
+#quiz-app-img {
     margin: auto;
+    padding: 2%;
     width: 50%;
+    text-align: center;
+
 }
-@media (min-width: 1000px){
-    body{
+
+.quiz-app-jpg {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    body {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+
     main {
         padding-top: 0;
         align-self: center;
     }
-    nav{
+
+    nav {
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 25vw;
+        height: 100vh;
+    }
+    button.eli-reiner, button.contact, button.portfolio{
+        height: 10vh;
     }
     hr {
         display: none;
-    }
-    section{
-
     }
 }

@@ -3,7 +3,7 @@ function hideUnwanted(code1, code2) {
     $(code2).hide();
 }
 
-function renderEli() {
+function renderAbout() {
     $('nav').on('click', '.eli-reiner', function () {
         hideUnwanted('#contact', '#portfolio');
         $('#about').show()
@@ -26,7 +26,7 @@ function renderPortfolio() {
 
 function launchPortfolio() {
     hideUnwanted('#contact', '#portfolio');
-    renderEli();
+    renderAbout();
     renderContact();
     renderPortfolio();
 }
