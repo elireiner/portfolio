@@ -6,33 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <nav class="index">
-        <ul>
-            <li>
-                <a href="index.html">Eli Reiner</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="portfolio.html">Portfolio</a>
-            </li>
-        </ul>
+        <button class="eli-reiner">Eli Reiner</button>
+        <button class="contact">Contact</button>
+        <button class="portfolio">Portfolio</button>
     </nav>
-    <section class="header index dark">
-        <p>Hi, from Eli Reiner</p>
-    </section>
-    <section class="bio index light">
-        <p>bio</p>
-    </section>
-    <section class="connect index dark">
-        <p>Let's solve: email</p>
-    </section>
+    <hr>
+    <main id="about" class="about">
+        <h1 class="blue">About</h1>
+        <br>
+        <p>I'm a <b>web developer</b> studying at Thinkful.
+            I like building solutions with code, enjoy my coffee with vanilla JS,
+            and fully invest my self in what I do.
+            Mindfulness keeps my operating system humming.</p>
+        <br>
+        <p>A while ago, I read an article by an engineering team leader that opened my mind to a new tool for
+            solving problems.
+            That new tool is called software. Since then <b>solving problems with software captures
+                my drive</b>.
+            Then I decided to fully immerse myself in the world of software and become a Full Stack Web Developer.
+            Ever since <b>I’m looking forward to solving yet another problem</b>.</p>
+        <br>
+        <p>Let's solve: <span class="orange">developerelireiner@gmail.com</span></p>
+    </main>
+    <main id="js-main-contact" class="main-contact">
+        <section class="profile"><img class="profile" src="profile.jpg" alt="An image of Eli Reiner">
+            <h1>Eli Reiner</h1>
+            <p class="small">New York, NY</p>
+        </section>
+        <div class="contact">
+            <section class="contact">
+                <a href="tel:718-702-4006">718-702-4006</a>
+                <br>
+                Phone
+            </section>
+            <hr>
+            <section class="contact">
+                <a href="mailto:developerelireiner@gmail.com">developerelireiner@gmail.com</a>
+                <br>
+                Email
+            </section>
+            <hr>
+        </div>
+        <section class="github-linkedin">
+            <a href="https://github.com/elireiner/" target="_blank">GitHub</a></p>
+            <a href="https://www.linkedin.com/in/eli-reiner-09b873161" target="_blank">LinkedIn</a>
+        </section>
+    </main>
+    <main id="portfolio" class="main-portfolio">
+        <div id="js-quiz-app-header" class="quiz-app-header">
+            <h2 id="js-quiz-app-explanation" class="quiz-app-explanation">Test your SpaceX IQ</h2>
+            <section id="js-portfolio-links" class="portfolio-links">
+                <a href="https://elireiner.github.io/quiz-app/" target="_blank">live</a>
+                <a href="https://github.com/elireiner/quiz-app" target="_blank">repo</a>
+            </section>
+        </div>
+        <section id="js-quiz-app-img" class="quiz-app-img">
+            <img class="quiz-app-jpg" src="quiz-app.jpg" alt="screenshot of my quiz-app project">
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
