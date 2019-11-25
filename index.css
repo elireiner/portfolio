@@ -178,13 +178,14 @@ h2 {
     main {
         padding-top: 0;
         align-self: center;
+        width: 75%;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 25vw;
+        width: 25%;
         height: 100vh;
     }
     button.eli-reiner, button.contact, button.portfolio{
