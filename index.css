@@ -218,6 +218,7 @@ h2 {
     }
     button:hover, button:focus, button:active{
         border: 2px #ad663d solid;
+        outline: none;
     }
     hr {
         display: none;
