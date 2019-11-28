@@ -84,7 +84,10 @@ img.profile {
     height: 60px;
     border-radius: 50%;
 }
-
+.description {
+    width: 70%;
+    margin: auto;
+}
 .small {
     font-size: 0.85rem;
 }
@@ -95,7 +98,6 @@ img.profile {
 
 div.contact {
     padding-top: 9vh;
-    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +114,6 @@ section.contact {
 a:visited,
 a {
     color: #01213b;
-    ;
 }
 
 a:focus,
@@ -167,6 +168,19 @@ h2 {
     font-size: 1.3rem;
     text-align: center;
 }
+.technologies-list {
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .main-portfolio{
+        display: flex;
+    }
+    .large-left, .large-right{
+        width: 50%;
+        height: 50vh;
+    }
+}
 
 @media (min-width: 1000px) {
     body {
@@ -175,10 +189,18 @@ h2 {
         justify-content: center;
     }
 
-    main,.about {
+    main{
         padding-top: 0;
         align-self: center;
         width: 75%;
+        justify-content: center;
+    }
+    .about, .main-portfolio{
+        width: 65%;
+        margin: auto;
+    }
+    .main-portfolio{
+        align-items: center;
     }
 
     nav {
@@ -190,6 +212,12 @@ h2 {
     }
     button.eli-reiner, button.contact, button.portfolio{
         height: 10vh;
+        width: 50%;
+        border: none;
+        background: none;
+    }
+    button:hover, button:focus, button:active{
+        border: 2px #ad663d solid;
     }
     hr {
         display: none;
