@@ -3,10 +3,9 @@
 }
 
 body {
-    background-color: #FDFFFC;
+    background-color: #FAF4F1;
     color: #01213b;
-    padding-right: 4%;
-    padding-left: 4%;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow: auto;
     height: 100vh;
@@ -14,6 +13,7 @@ body {
 }
 
 nav {
+    background-color: #406487;
     height: 10vh;
     width: 100%;
     font-size: 1.2rem;
@@ -33,15 +33,11 @@ main {
 }
 
 .blue {
-    color: #0000ff;
+    color: #74C4AC
 }
 
 .bold {
     font-weight: bold;
-}
-
-p {
-    margin: 0;
 }
 
 .about {
@@ -50,6 +46,9 @@ p {
     flex-direction: column;
     width: 80%;
     align-items: center;
+    padding-right: 4%;
+    padding-left: 4%;
+    margin: 0;
 }
 
 .main-contact {
@@ -72,6 +71,11 @@ section.contact {
     height: 50%;
 }
 
+nav>button {
+    color: #FAF4F1;
+    ;
+}
+
 section.github-linkedin {
     display: flex;
     flex-direction: row;
@@ -84,10 +88,12 @@ img.profile {
     height: 60px;
     border-radius: 50%;
 }
+
 .description {
     width: 70%;
     margin: auto;
 }
+
 .small {
     font-size: 0.85rem;
 }
@@ -116,9 +122,13 @@ a {
     color: #01213b;
 }
 
-a:focus,
+.quiz-app-jpg {
+    border: 3px solid #E6AC4D;
+    border-radius: 1.5%;
+}
+
 a:hover {
-    color: #ad663d;
+    color: #E6AC4D;
 }
 
 div.contact {
@@ -168,15 +178,18 @@ h2 {
     font-size: 1.3rem;
     text-align: center;
 }
+
 .technologies-list {
     text-align: center;
 }
 
 @media (min-width: 800px) {
-    .main-portfolio{
+    .main-portfolio {
         display: flex;
     }
-    .large-left, .large-right{
+
+    .large-left,
+    .large-right {
         width: 50%;
         height: 50vh;
     }
@@ -187,19 +200,26 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        font-size: 20px;
+        line-height: 24px;
+        padding-right: 4%;
+        padding-left: 4%;
     }
 
-    main{
+    main {
         padding-top: 0;
         align-self: center;
         width: 75%;
         justify-content: center;
     }
-    .about, .main-portfolio{
+
+    .about,
+    .main-portfolio {
         width: 65%;
         margin: auto;
     }
-    .main-portfolio{
+
+    .main-portfolio {
         align-items: center;
     }
 
@@ -210,16 +230,30 @@ h2 {
         width: 25%;
         height: 100vh;
     }
-    button.eli-reiner, button.contact, button.portfolio{
+
+    button.eli-reiner,
+    button.contact,
+    button.portfolio {
         height: 10vh;
         width: 50%;
         border: none;
         background: none;
     }
-    button:hover, button:focus, button:active{
-        border: 2px #ad663d solid;
+
+    button {
         outline: none;
     }
+
+    button:hover {
+        border: 1.5px #E6AC4D solid;
+        border-radius: 1.5%;
+
+    }
+
+    button:focus button:active {
+        border: none;
+    }
+
     hr {
         display: none;
     }
