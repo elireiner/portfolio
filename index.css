@@ -15,7 +15,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    align-self: center;
 }
 
 nav>button {
@@ -82,17 +81,20 @@ hr {
 .main-portfolio {
     text-align: center;
 }
-.description{
+
+.description {
     text-align: left;
     width: 80%;
     margin: auto;
 }
+
 .portfolio-links {
     width: 50%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
+
 .quiz-app-jpg {
     display: block;
     width: 50%;
@@ -104,8 +106,9 @@ hr {
 
 
 @media (min-width: 800px) {
-    .main-portfolio {
+    .quiz-app{
         display: flex;
+        justify-content: space-between;
     }
 
     .large-left,
@@ -126,25 +129,6 @@ hr {
         padding-left: 4%;
     }
 
-    main {
-        padding-top: 0;
-        align-self: center;
-        width: 75%;
-        justify-content: center;
-    }
-
-    .about,
-    .main-portfolio {
-        width: 65%;
-        margin: auto;
-    }
-    .about-header{
-        text-align: left;
-    }
-    .main-portfolio {
-        align-items: center;
-    }
-
     nav {
         flex-direction: column;
         align-items: center;
@@ -153,16 +137,16 @@ hr {
         height: 100vh;
     }
 
-    button.eli-reiner,
-    button.contact,
-    button.portfolio {
+    main {
+        align-self: center;
+        width: 75%;
+    }
+
+    button {
         height: 10vh;
         width: 50%;
         border: none;
         background: none;
-    }
-
-    button {
         outline: none;
     }
 
@@ -174,6 +158,16 @@ hr {
 
     button:focus button:active {
         border: none;
+    }
+
+    .about,
+    .main-portfolio {
+        width: 65%;
+        margin: auto;
+    }
+
+    .about-header {
+        text-align: left;
     }
 
     hr {
