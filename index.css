@@ -5,17 +5,12 @@
 body {
     background-color: #FAF4F1;
     color: #01213b;
-    margin: 0;
     font-family: 'Roboto', sans-serif;
-    overflow: auto;
-    height: 100vh;
-
 }
 
 nav {
     background-color: #406487;
     height: 10vh;
-    width: 100%;
     font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
@@ -23,95 +18,12 @@ nav {
     align-self: center;
 }
 
-main {
-    width: 100%;
-    height: 90vh;
-}
-
-.main-portfolio {
-    margin-top: 5vh;
+nav>button {
+    color: #FAF4F1;
 }
 
 .green {
     color: #74C4AC
-}
-
-.about {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 4%;
-    padding-left: 4%;
-    margin: 0;
-}
-.about-header{
-    text-align: center;
-}
-.main-contact {
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-}
-
-h1,
-.about>p {
-    width: 100%;
-}
-
-section.profile {
-    height: 15vh;
-    text-align: center;
-}
-
-section.contact {
-    height: 50%;
-}
-
-nav>button {
-    color: #FAF4F1;
-    background-color: none;
-}
-
-section.github-linkedin {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 20%;
-}
-
-img.profile {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.description {
-    width: 70%;
-    margin: auto;
-}
-
-.small {
-    font-size: 0.85rem;
-}
-
-.orange {
-    color: #ad663d;
-}
-
-div.contact {
-    padding-top: 9vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 85%;
 }
 
 a:visited,
@@ -119,66 +31,77 @@ a {
     color: #01213b;
 }
 
-.quiz-app-jpg {
-    border: 3px solid #E6AC4D;
-    border-radius: 1.5%;
-}
-
 a:hover {
     color: #E6AC4D;
 }
 
-div.contact {
-    width: 80%;
-    align-self: center;
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.about {
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.about-header {
+    text-align: center;
+}
+
+img.profile {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.main-contact,
+.main-contact>p.small {
+    text-align: center;
+}
+
+.main-contact>a,
+.main-contact>p {
+    display: block;
+    width: 65%;
+    margin: auto;
+    text-align: left;
 }
 
 hr {
-    width: 100%;
-    height: 1.5px;
+    width: 80%;
 }
 
-.quiz-app-header {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-}
-
-.quiz-app-explanation {
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.portfolio-links {
-    width: 100%;
-    height: 5vh;
+.bottom-links {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 15%;
 }
 
-.quiz-app-img {
+.main-portfolio {
+    text-align: center;
+}
+.description{
+    text-align: left;
+    width: 80%;
     margin: auto;
-    padding: 2%;
+}
+.portfolio-links {
     width: 50%;
-    text-align: center;
-
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
-
 .quiz-app-jpg {
-    max-width: 100%;
+    display: block;
+    width: 50%;
+    margin: auto;
+    border: 3px solid #E6AC4D;
+    border-radius: 1.5%;
 }
 
-h2 {
-    font-size: 1.3rem;
-    text-align: center;
-}
 
-.technologies-list {
-    text-align: center;
-}
 
 @media (min-width: 800px) {
     .main-portfolio {
