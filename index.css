@@ -6,6 +6,7 @@ body {
     background-color: #FAF4F1;
     color: #01213b;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
 }
 
 nav {
@@ -14,13 +15,22 @@ nav {
     font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
 }
 
 nav>button {
     color: #FAF4F1;
+    text-decoration: none;
+    background-color: #406487;
+    border: none;
+}
+.about>h1, .main-portfolio>h1{
+    margin-top: 1.5em;
 }
 
+h2{
+    font-size: 1.33em;
+}
 .green {
     color: #74C4AC
 }
@@ -87,7 +97,9 @@ hr {
     width: 80%;
     margin: auto;
 }
-
+.quiz-app-explanation{
+    margin-block-start: 1.5em;
+}
 .portfolio-links {
     width: 50%;
     margin: auto;
